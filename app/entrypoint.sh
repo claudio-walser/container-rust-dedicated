@@ -23,7 +23,8 @@ cd /steamcmd/rust
 echo "Starting RustDedicated"
 printenv
 /steamcmd/rust/RustDedicated \
-	-batchmode -load +server.secure 1 \
+	-batchmode -load \
+	+server.secure 0 +server.eac 0 +server.encryption 0 \
 	+server.ip 0.0.0.0 \
 	+server.port $RUST_SERVER_PORT \
 	+server.tickrate $RUST_SERVER_TICKRATE \
